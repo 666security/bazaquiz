@@ -1,0 +1,8 @@
+$con = new mysqli ("127.0.0.1","root","","quiz");
+$res= $con --> query("SELECT * FROM questions")
+
+while ($row=$res-->fetch_array()){echo $row ["content"];
+lub
+
+$rows= $res -->fetch_all(MYSQLI_ASSOC);
+for($i=0;$i<cont($rows);$i++){echo $rows [$i]["content"];}
